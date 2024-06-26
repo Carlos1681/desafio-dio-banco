@@ -50,13 +50,13 @@ public abstract class Conta implements IConta {
     }
 
     protected void imprimirInfoComum() {
-        System.out.println(String.format("Agencia: %d", agencia));
-        System.out.println(String.format("Numero: %d", numero));
-        System.out.println(String.format("Saldo: %.2f", saldo));
-        System.out.println(String.format("Cliente: %s", cliente.getNome()));
-        System.out.println(String.format("Endereço: %s", cliente.getEndereco()));
-        System.out.println(String.format("Email: %s", cliente.getEmail()));
-        System.out.println(String.format("Banco: %s", banco.getNome()));
+        System.out.printf("Agencia: %d%n", agencia);
+        System.out.printf("Numero: %d%n", numero);
+        System.out.printf("Saldo: %.2f%n", saldo);
+        System.out.printf("Cliente: %s%n", cliente.getNome());
+        System.out.printf("Endereço: %s%n", cliente.getEndereco());
+        System.out.printf("Email: %s%n", cliente.getEmail());
+        System.out.printf("Banco: %s%n", banco.getNome());
     }
 
 }
